@@ -23,7 +23,7 @@ function api () {
      var newDiv = document.createElement("div");
      newDiv.innerHTML = `
 
-    <div class="card my-4" style="width: 22rem;">
+    <div class="card my-4" style="width: 20rem;">
     <img class="card-img-top" src="${data.meals[a].strMealThumb}" alt="Card image cap">
     <div class="card-body ">
       <h5 class="card-title">${data.meals[a].strMeal}</h5>
