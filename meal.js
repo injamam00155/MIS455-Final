@@ -22,12 +22,15 @@ function api () {
     
      var newDiv = document.createElement("div");
      newDiv.innerHTML = `
-     <div class="card m-2" style="width: 18rem;">
-    <img src="${data.meals[a].strMealThumb}" class="card-img-top" alt="...">
-    <div class="card-body">
+
+    <div class="card my-4" style="width: 22rem;">
+    <img class="card-img-top" src="${data.meals[a].strMealThumb}" alt="Card image cap">
+    <div class="card-body ">
       <h5 class="card-title">${data.meals[a].strMeal}</h5>
+      <p class="card-text ">${data.meals[a].strInstructions}</p>
     </div>
-  </div> ` ;
+    <a  href="#" class="btn btn-danger m-2">এটা নিবো</a>
+    </div>` ;
   
       oldContent.appendChild(newDiv);
   
